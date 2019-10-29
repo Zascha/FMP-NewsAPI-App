@@ -1,0 +1,126 @@
+.news-card{
+  background-color: $white;
+  border-radius: 2px;
+  font-size: 14px;
+  color: $black;
+  margin: 5px;
+  max-height: 250px;
+  padding: 11px;
+  width: 32.5%;
+
+  &__title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__labels{
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__label{
+    align-items: center;
+    background-color: $light-blue;
+    border-radius: 10px;
+    display: flex;
+    margin-right: 5px;
+    padding: 3px 10px;
+
+    &.business{
+      background-color: $business-color;
+      color: $white;
+      opacity: 0.7;
+    }
+  
+    &.entertainment{
+      background-color: $entertainment-color;
+      color: $white;
+      opacity: 0.7;
+    }
+  
+    &.general{
+      background-color: $general-color;
+      color: $white;
+      opacity: 0.7;
+    }
+  
+    &.science{
+      background-color: $science-color;
+      color: $white;
+      opacity: 0.7;
+    }
+
+    &.health{
+      background-color: $health-color;
+      color: $white;
+      opacity: 0.7;
+    }
+  
+    &.sports{
+      background-color: $sports-color;
+      color: $white;
+      opacity: 0.7;
+    }
+  
+    &.technology{
+      background-color: $technology-color;
+      color: $white;
+      opacity: 0.7;
+    }
+  }
+
+  &__description{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  &__link{
+    align-items: center;
+    display: flex;
+    margin-bottom: 10px;
+
+    img{
+      height: 10px;
+      margin-right: 5px;
+      width: auto;
+    }
+
+    a{
+      color: $black;
+
+      &:hover, active{
+        color: $black;
+      }
+    }
+  }
+
+  &.business{
+    border-top: 4px solid $business-color;
+  }
+
+  &.entertainment{
+    border-top: 4px solid $entertainment-color;
+  }
+
+  &.general{
+    border-top: 4px solid $general-color;
+  }
+
+  &.science{
+    border-top: 4px solid $science-color;
+  }
+
+  &.sports{
+    border-top: 4px solid $sports-color;
+  }
+
+  &.health{
+    border-top: 4px solid $health-color;
+  }
+
+  &.technology{
+    border-top: 4px solid $technology-color;
+  }
+}
