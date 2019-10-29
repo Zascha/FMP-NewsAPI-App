@@ -1,4 +1,4 @@
-.news-card{
+.news-card {
   background-color: $white;
   border-radius: 2px;
   font-size: 14px;
@@ -8,19 +8,33 @@
   padding: 11px;
   width: 32.5%;
 
-  &__title{
+  @include news-card-borders-styles();
+
+  @media only screen and (max-width: $tablet-size) {
+    width: 32%;
+  }
+
+  @media only screen and (max-width: $small-desktop-size) {
+    width: 48.5%;
+  }
+
+  @media only screen and (max-width: $small-tablet-size) {
+    width: 100%;
+  }
+
+  &__title {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
   }
 
-  &__labels{
+  &__labels {
     align-items: center;
     display: flex;
     margin-bottom: 20px;
   }
 
-  &__label{
+  &__label {
     align-items: center;
     background-color: $light-blue;
     border-radius: 10px;
@@ -28,99 +42,32 @@
     margin-right: 5px;
     padding: 3px 10px;
 
-    &.business{
-      background-color: $business-color;
-      color: $white;
-      opacity: 0.7;
-    }
-  
-    &.entertainment{
-      background-color: $entertainment-color;
-      color: $white;
-      opacity: 0.7;
-    }
-  
-    &.general{
-      background-color: $general-color;
-      color: $white;
-      opacity: 0.7;
-    }
-  
-    &.science{
-      background-color: $science-color;
-      color: $white;
-      opacity: 0.7;
-    }
-
-    &.health{
-      background-color: $health-color;
-      color: $white;
-      opacity: 0.7;
-    }
-  
-    &.sports{
-      background-color: $sports-color;
-      color: $white;
-      opacity: 0.7;
-    }
-  
-    &.technology{
-      background-color: $technology-color;
-      color: $white;
-      opacity: 0.7;
-    }
+    @include category-labels-styles();
   }
 
-  &__description{
+  &__description {
     font-size: 14px;
     margin-bottom: 10px;
   }
 
-  &__link{
+  &__link {
     align-items: center;
     display: flex;
     margin-bottom: 10px;
 
-    img{
+    img {
       height: 10px;
       margin-right: 5px;
       width: auto;
     }
 
-    a{
+    a {
       color: $black;
 
-      &:hover, active{
+      &:hover,
+      active {
         color: $black;
       }
     }
-  }
-
-  &.business{
-    border-top: 4px solid $business-color;
-  }
-
-  &.entertainment{
-    border-top: 4px solid $entertainment-color;
-  }
-
-  &.general{
-    border-top: 4px solid $general-color;
-  }
-
-  &.science{
-    border-top: 4px solid $science-color;
-  }
-
-  &.sports{
-    border-top: 4px solid $sports-color;
-  }
-
-  &.health{
-    border-top: 4px solid $health-color;
-  }
-
-  &.technology{
-    border-top: 4px solid $technology-color;
   }
 }
